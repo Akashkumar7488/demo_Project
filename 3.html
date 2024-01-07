@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height:100vh;
+            width:100vw;
+            background-color: #56ab2f;
+            display:flex;
+            justify-content: center;
+            align-items:center;
+        }
+        .card{
+           height:900px;
+           width:600px;
+           background-color: white;
+           border-radius: 20px;
+           display:flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: space-around;
+          
+
+        }
+        .card img{
+           border-radius: 20px 20px 0px 0px;
+           width:100%;
+           margin-top: -25px;
+           /* margin-top: -20px; */
+        }
+        .textBox{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        /* gap:15px; */
+        width:75%;
+        text-align:center;
+        /* padding:20px; */
+        font-size: 1.2rem;
+        font-weight: bold;
+        
+        }
+        .textBox h2{
+            font-weight: bold;
+        }
+        .textBox p{
+            color:darkred;
+        }
+        #amountBox{
+            width:80%;
+            height:10%;
+            background-color: lawngreen;
+            border-radius: 10px;
+            display:flex;
+            justify-content:space-between;
+            padding-left: 20px;
+            padding-right: 20px;
+            align-items: center;
+        }
+        .leftBox{
+            width:fit-content;
+            display:flex;
+            gap:15px;
+            font-size:1.2rem;
+            font-weight: bold;
+            align-items: center;
+
+
+        }
+        
+.cancelButton a {
+    text-decoration: none;
+    color: rgb(30, 29, 29);
+    font-weight: bold;
+}
+
+        
+        .imgBox img{
+            height:30px;
+            width:30px;
+            display:flex;
+           /* justify-content: center; */
+
+        }
+        #paymentButton{
+        width:80%;
+        height:9%;
+        background-color: blue;
+        color:white;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 1.2rem;
+        box-shadow: 0 45px 65px rgba(0,0,0,0.50), 0 35px 22px rgba(0,0,0,0.16);
+        
+        }
+        .cancelButton{
+            text-decoration: none;
+            color:grey;
+            font-weight: bold;
+
+        }
+        #rightBox a{
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .imgBox{
+            height:30px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="OIP (4).jpg" alt="study"/>
+            <div class="textBox">
+                <h2>Order Summary</h2>
+                <p>Keep studying well!!!</p>
+            </div>
+            <div id="amountBox">
+                <div class="leftBox">
+                    <div class="imgBox"><img src="download (1).jpg" alt="music"/>
+                    </div>
+                    
+                    <div id="textAmountBox">
+                        <p>Annual plan</p>
+                        <p>$99.9/year</p>
+                    </div>
+                </div>
+                <div id="rightBox">
+                    <a href="#">change</a>
+                </div>
+            </div>
+            <button id="paymentButton">Proceed to payment</button>
+            <div class="cancelButton">
+                <a href="#">Cancel Order</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

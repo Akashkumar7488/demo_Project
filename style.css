@@ -1,0 +1,144 @@
+#navList{
+ list-style:none;
+ display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px;
+    margin-left:15px;
+    margin-right:15px;
+    width:100%;
+    font-size:2.5rem;
+}
+/* for spacing */
+nav{
+    width:100%;
+    /* overflow-x: none; */
+}
+.container{
+    height:100vh;
+    width:100vw;
+    overflow-x:none;
+    background-color: white;
+}
+.navContainer{
+    background-color: seagreen;
+    /* min-height:px; */
+    width:1380px;
+    height:110px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    border-radius:20px;
+    /* margin-top:none;
+    padding-top:none; */
+}
+#navLogo{
+    font-size:3rem;
+    color:lightcoral;
+    font-style: oblique;
+}
+    a{
+        text-decoration:none;
+    }
+    #navItems{
+        display:flex;
+        gap:20px;
+        font-style: italic;
+        
+    }
+    footer{
+        width:100%;
+    }
+    .footerBox{
+     background-color: #414345;
+     text-align:center;
+     min-height:20px;
+    }
+    .footerBox p{
+        color:beige;
+        font-size:1.7rem;
+        justify-content:center;
+        align-items:end;
+    }
+    .contentBox{
+        width:70%;
+        margin:auto;
+        /* border:1px solid black; */
+        background-color: #FFE47A;
+        /* min-height: 70%; */
+        display:flex;
+        flex-direction: column;
+        gap:100px;
+        padding:3rem;
+        box-shadow: 0px 0px 30px black;
+        border-radius: 20px;
+        margin-top: 20px;
+    }
+    .item{
+        display:flex;
+        justify-content:space-around;
+
+    }
+    .rightBox img{
+        border-radius:20px;
+        border-radius:20px;
+        transition:all 0.6s linear 0s;
+        width:200px;
+        height:250px;
+    }
+    .rightBox:hover{
+        transform:scale(1.2);
+    }
+    .leftBox{
+        display:flex;
+        flex-direction:column;
+        gap:20px;
+    }
+    .leftBox h2{
+     color:#3A6073;
+    }
+    .ingredientBox{
+        font-size:1.3rem;
+    }
+    .recipieBox{
+        font-size:1.3rem;
+    }
+    .rightBox{
+        position:relative;
+        overflow:hidden;
+        transition:all 0.3s linear 0s;
+        box-shadow: 1px 1px 10px solid black;
+        border-radius: 20px;
+    }
+    .rightBox.overlay{
+        position: absolute;
+        top:0;
+        left:0;
+        height:100%;
+        width:100%;
+        background-color:#ED4264;
+        border-radius:20px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        opacity:0;
+        transition:all 0.3s linear 0s;
+    }
+    .rightBox:hover img {
+        transform: scale(1.1);
+        filter:brightness(0.5);
+    }
+    
+    .rightBox:hover .overlay {
+        opacity: 1;
+    }
+    .rightBox .overlay .buytext {
+        text-align: center;
+    }
+    
+    .rightBox .overlay span{
+        color:black;
+        font-size:1.2rem;
+    }
+   
